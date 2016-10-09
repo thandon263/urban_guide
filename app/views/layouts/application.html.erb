@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/font-awesome/css/font-awesome.css" media="screen" title="no title">
+    <title>Thando - Developer</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="#" class="name">Thando Ncube</a>
+      <nav>
+        <%= link_to 'Articles', posts_path %>
+        <a href="#">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
     <%= yield %>
   </body>
 </html>
