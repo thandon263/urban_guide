@@ -147,7 +147,7 @@ textarea {
   margin: .5em 0 2em 0;
 }
 
-textarea {
+textarea, .textarea {
   min-height: 10em;
 }
 
@@ -170,6 +170,7 @@ input[type="submit"], .button{
 @import 'normalize';
 @import 'welcome';
 @import 'posts_projects';
+@import 'pygments'
 
 
 /*
