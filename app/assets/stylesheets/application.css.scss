@@ -33,6 +33,22 @@ body {
   clear: both;
 }
 
+.btn {
+  text-decoration: none;
+  color: $dark;
+  font-size: 12pt;
+}
+
+.btn-default {
+  font-style: italic;
+  font-family: 'Times New Roman';
+  padding: .4em;
+  &:hover {
+    color: $highlight;
+  }
+}
+
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
   color: $dark;
 }
